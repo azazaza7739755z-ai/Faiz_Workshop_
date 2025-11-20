@@ -11,15 +11,22 @@ const gallery = {
     'images/door-9.jpg',
     'images/door-10.jpg',
     'images/door-11.jpg',
+    'images/door-12.jpg',
     'images/door-13.jpg',
     'images/door-14.jpg',
     'images/door-15.jpg',
     'images/door-16.jpg',
+    'images/door-17.jpg',
+    'images/door-18.jpg',
     'images/door-19.jpg',
     'images/door-20.jpg',
     'images/door-21.jpg',
+    'images/door-22.jpg',
+    'images/door-23.jpg',
     'images/door-24.jpg',
     'images/door-25.jpg',
+    'images/door-26.jpg',
+    'images/door-27.jpg',
     'images/door-28.jpg',
     'images/door-29.jpg',
     'images/door-30.jpg',
@@ -33,10 +40,20 @@ const gallery = {
     'images/door-38.jpg',
     'images/door-39.jpg',
     'images/door-40.jpg',
+    'images/door-41.jpg',
+    'images/door-42.jpg',
+    'images/door-43.jpg',
     'images/door-44.jpg',
+    'images/door-45.jpg',
     'images/door-46.jpg',
+    'images/door-47.jpg',
+    'images/door-48.jpg',
     'images/door-49.jpg',
-    'images/door-50.jpg'
+    'images/door-50.jpg',
+    'images/door-51.jpg',
+    'images/door-52.jpg',
+    'images/door-53.jpg',
+    'images/door-54.jpg'
   ],
   bedrooms: [
     'images/door-206.jpg',
@@ -52,7 +69,6 @@ const gallery = {
     'images/door-203.jpg',
     'images/door-204.jpg',
     'images/door-205.jpg',
-    'images/door-213.jpg',
     'images/door-214.jpg',
     'images/door-215.jpg'
   ],
@@ -60,11 +76,13 @@ const gallery = {
     'images/door-500.jpg',
     'images/door-501.jpg',
     'images/door-502.jpg',
-    'images/door-503.jpg',
-    'images/door-504.jpg'
+    'images/door-503.jpg'
   ]
 }
-
+/*
+هنا الصراحه استخدمت الذكاء الاصناعي بسبب اني غائب طوال العام
+بسبب العمل ولاني مشغول لم اصل بعد الى هذه  الكورس
+*/
 function showImages (category) {
   const container = document.getElementById('galleryContainer')
   container.innerHTML = ''
@@ -82,6 +100,7 @@ function activateImageClick () {
     img.addEventListener('click', () => {
       modal.style.display = 'block'
       modalImg.src = img.src
+      history.pushState({zoomed: true}, "");
     })
   })
 }
@@ -100,3 +119,9 @@ span.onclick = () => (modal.style.display = 'none')
 modal.onclick = e => {
   if (e.target === modal) modal.style.display = 'none'
 }
+window.addEventListener('popstate',function(){
+  const overlay = this.document.querySelector(".overlay");
+  if(overlay){
+    overlay.remove();
+  }
+});

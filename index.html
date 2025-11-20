@@ -1,31 +1,29 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl"><!--هنا غيرنا الاتجاه واللغه-->
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ورشة فايز محمد الغميري واخوانه للنجارة</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>ورشة فايز محمد الغميري واخوانه للنجارة</title><!--عنوان الصفحه-->
+    <link rel="stylesheet" href="style.css" /><!--هنا قمنا باستدعاء التنسيقات عبر لينك-->
   </head>
   <body>
-    <header>
+    <header><!--هنا رأس الصفحه -->
       <h1>ورشة فايز محمد الغميري واخوانه للنجارة</h1>
-      <nav>
-        <a href="#home">الرئيسية</a>
+      <nav><!--لتظهر على شكل صف-->
+        <a href="#home">الرئيسية</a><!--divهنا الروابط تؤدي الى اقسام الصفحه التي قسمناها باستخدام -->
         <a href="#services">الخدمات</a>
         <a href="#gallery">المعرض</a>
         <a href="#contact">اتصل بنا</a>
       </nav>
     </header>
-
-    <div id="home" class="hero">
+    <div id="home" class="hero"><!--classنستقبل التنسيقات من خلال -->
       <h2>مرحباً بكم في ورشة فايز محمد الغميري</h2>
       <p>نصمم وننفذ جميع أنواع الأبواب الخشبية بأعلى جودة وإتقان.</p>
       <a href="#services" class="btn">تعرف على خدماتنا</a>
       <p>
-        <img src="images/door-111.jpeg" class="imgg" />
+        <img src="images/door-111.jpeg" class="imgg" /><!--هنا قمنا باضافه شعار المحل-->
       </p>
     </div>
-
     <div id="services" class="div1">
       <h2>خدماتنا</h2>
       <ul>
@@ -36,10 +34,10 @@
         <li>يتوفر لدينا صيانه وترميم الاثاث المنزلي بانواعه</li>
       </ul>
     </div>
-
     <section id="gallery">
       <h2 class="hh">معرض أعمالنا</h2>
       <p>اختر نوع العمل لعرض صوره:</p>
+      <!--هنا قمنا بعمل قائمه للصور للاختيار-->
       <select id="categorySelect">
         <option value="doors">أبواب</option>
         <option value="bedrooms">غرف نوم</option>
@@ -47,25 +45,21 @@
       </select>
       <div class="gallery" id="galleryContainer"></div>
     </section>
-
     <div id="contact" class="div2">
       <h2>اتصل بنا</h2>
       <ul>
         <li>الموقع: اليمن - (الضبر - عمران خط صعده)</li>
-        <li>
+        <li><!--هنا الرابط الذي يؤدي الى واتساب-->
           للتواصل واتساب
           <a href="https://wa.me/967772744177" target="_blank">967772744177+</a>
         </li>
       </ul>
     </div>
-
     <footer>© 2025 جميع الحقوق محفوظة - ورشة فايز محمد الغميري</footer>
-
-    <div id="imageModal" class="modal">
+    <div id="imageModal" class="modal"><!--هنا الصفحه المخفيه التي لن تظهر الا عند الضغط على الصور-->
       <span class="close">&times;</span>
       <img class="modal-content" id="modalImg" />
     </div>
-
-    <script src="script.js"></script>
+    <script src="script.js"></script><!--scriptهنا قمنا باستدعاء ملف -->
   </body>
 </html>

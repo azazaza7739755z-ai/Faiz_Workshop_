@@ -1,3 +1,4 @@
+/*هنا التنسيقات ومتعوب عليها بنسبه% 100*/
 body {
   font-family: "Cairo", sans-serif;
   margin: 0;
@@ -5,11 +6,11 @@ body {
   color: #0c0303;
 }
 header {
-  background-image: url(images/door-108.jpeg);
-  color: hsl(0, 67%, 1%);
-  padding: 30px 20px;
-  text-align: center;
-  border-radius: 8px;
+  background-image: url(images/door-108.jpeg);/*هنا خلفيه صوره من المعرض*/
+  color: hsl(0, 67%, 1%);/*لون الخط*/
+  padding: 30px 20px;/*هنا الحدود*/
+  text-align: center;/* المحاذاه*/
+  border-radius: 8px;/*يظهر اطراف المربع ربع دائره عل حسب*/
 }
 nav a {
   color: #310404;
@@ -132,6 +133,7 @@ section {
   border-radius: 10px;
   padding: 10px 20px;
 }
+/*هنا قمنا بتنسيق الصور ليتناسب مع الهاتف تلقائي*/
 @media (max-width: 768px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
